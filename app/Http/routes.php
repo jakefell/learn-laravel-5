@@ -31,3 +31,5 @@ Route::get('foo', ['middleware' => 'manager', function()
 {
     return 'This page may only be viewed by managers';
 }]);
+
+Route::get('tags/{tags}', 'TagsController@show');
